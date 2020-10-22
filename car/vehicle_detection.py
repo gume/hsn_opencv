@@ -1,9 +1,9 @@
 import cv2
 print(cv2.__version__)
 
-cascade_src = 'cars.xml'
-video_src = 'dataset/video1.avi'
-#video_src = 'dataset/video2.avi'
+cascade_src = 'data/cars.xml'
+video_src = 'videos/video1.avi'
+#video_src = 'videos/video2.avi'
 
 cap = cv2.VideoCapture(video_src)
 car_cascade = cv2.CascadeClassifier(cascade_src)

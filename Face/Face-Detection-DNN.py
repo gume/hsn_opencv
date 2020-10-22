@@ -9,8 +9,8 @@ import sys
 
 # Define paths
 base_dir = os.path.dirname(__file__)
-prototxt_path = os.path.join(base_dir + 'data/deploy.prototxt')
-caffemodel_path = os.path.join(base_dir + 'data/weights.caffemodel')
+prototxt_path = os.path.join(base_dir + '/data/deploy.prototxt')
+caffemodel_path = os.path.join(base_dir + '/data/weights.caffemodel')
 
 # Read the model
 model = cv2.dnn.readNetFromCaffe(prototxt_path, caffemodel_path)
